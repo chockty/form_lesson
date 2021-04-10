@@ -1,1 +1,355 @@
 @charset "utf-8";
+
+/* 共通 */
+body {
+  background-color: rgb(241, 250, 250);
+  padding: 30px 0;
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+}
+
+.main {
+  width: 690px;
+  margin: 0 auto;
+  color: rgb(112, 110, 110);
+}
+
+.form-label,
+.font-size-text {
+  font-size: 13px;
+}
+
+.info-box {
+  margin-top: 15px;
+}
+
+.input-box-size {
+  margin-top: 5px;
+  height: 35px;
+  width: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.input-box-design {
+  background-color: rgb(241, 250, 250);
+  border: 1px solid rgb(240, 238, 235);
+  border-radius: 2px;
+}
+
+.input-box:focus {
+  border: 1px solid rgb(41, 216, 158);
+  box-shadow: 0 0 4px rgb(41, 216, 158);
+  outline: none;
+}
+
+.select-course-are label,
+.form-label {
+  display: block;
+}
+
+.input-name-sec label::after,
+.input-required::after {
+  display: inline-block;
+  margin-left: 4px;
+  content: "※";
+  color: red;
+}
+
+
+/* main-contents */
+.main-contents {
+  background-color: white;
+  padding: 50px 75px;
+  box-sizing: border-box;
+  border: 1px solid rgb(204, 209, 209);
+  border-radius: 4px;
+}
+
+/* sns-link */
+.sns-link {
+  text-align: center;
+}
+
+.sns-link h1 {
+  font-size: 25px;
+}
+
+.sns-link-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.sns-link-box a {
+  margin-left: 10px;
+  width: 315px;
+  text-decoration: none;
+  padding: 15px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  opacity: 0.8;
+  transition: all .3s;
+}
+
+.sns-link-box a:hover {
+  opacity: 1;
+}
+
+.facebook {
+  background-color: rgb(28, 28, 184);
+  color: #fff;
+}
+
+.google {
+  border: 1px solid rgb(204, 209, 209);
+  color: rgb(233, 93, 93);
+}
+
+.sns-link-box a:first-child {
+  margin-left: 0;
+}
+
+.sns-link p {
+  margin-top: 10px;
+}
+
+/* form */
+.account-info {
+  margin-top: 20px;
+}
+
+.account-info-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-info-title span {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 40%;
+  background-color: rgb(204, 209, 209);
+  border-radius: 3px;
+}
+
+.account-info-title p {
+  margin: 0 5px;
+}
+
+/* input-name */
+.input-name {
+  display: flex;
+  justify-content: center;
+}
+
+.input-name-sec {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.input-name-sec:first-child {
+  margin-left: 0;
+}
+
+/* select-gender */
+.select-gender-sec {
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+}
+
+.select-gender-sec li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.select-gender-sec li:first-child {
+  margin-left: 0;
+}
+
+.select-gender-sec input {
+  display: none;
+}
+
+.radio-btn {
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-btn::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ddd;
+  left: 0;
+  top: 0;
+}
+
+.radio-btn::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #1d7aca;
+  left: 4px;
+  top: 4px;
+  opacity: 0;
+}
+
+.select-gender-sec input:checked + .radio-btn::after {
+  opacity: 1;
+}
+
+/* .select-prefecture */
+.select-prefecture {
+  position: relative;
+  margin-top: 5px;
+}
+
+.select-prefecture select {
+  width: 50%;
+  appearance: none;
+}
+
+.select-prefecture span {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: solid 2px rgb(112, 110, 110);
+  border-right: solid 2px rgb(112, 110, 110);
+  transform: rotate(135deg);
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  pointer-events: none;
+}
+
+/* select-course */
+.select-course-area {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.select-course-area li {
+  margin-top: 5px;
+}
+
+.select-course-area li:first-child {
+  margin-top: 0;
+}
+
+.select-course-area input {
+  display: none;
+}
+
+.course-label {
+  display: inline-block;
+  padding: 5px 30px;
+  position: relative;
+  width: auto;
+}
+
+.course-label::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(226, 225, 223);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  margin-top: -8px;
+}
+
+.course-label::after {
+  content: '';
+  width: 8px;
+  height: 15px;
+  border-right: 3px solid rgb(41, 216, 158);
+  border-bottom: 3px solid rgb(41, 216, 158);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  margin-top: -11px;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.select-course-area input:checked + .course-label::after {
+  opacity: 1;
+}
+
+/* input-textarea */
+.input-textarea-box {
+  padding: 10px 5px 8px 5px;
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  margin-top: 5px;
+}
+
+/* submit */
+.submit-btn {
+  background-color: rgb(41, 216, 158);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  color: white;
+  padding: 10px 0;
+  margin-top: 15px;
+  width: 100%;
+  opacity: 0.8;
+  transition: all .3s;
+}
+
+.submit-btn:hover {
+  opacity: 1;
+}
+
+.submit-btn:active {
+  background-color: #fff;
+  color: rgb(41, 216, 158);
+  border: 1px solid rgb(226, 225, 223);
+}
+
+/* bottom-contents */
+.description a,
+.bottom-contents p a {
+  color: rgb(41, 216, 158);
+  opacity: 1;
+}
+
+.description a:hover,
+.bottom-contents p a:hover {
+  opacity: 0.7;
+}
+
+.bottom-contents {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.bottom-contents p:last-child {
+  margin-top: 10px
+}
+
+.bottom-contents p a:hover {
+  text-decoration: underline;
+}
