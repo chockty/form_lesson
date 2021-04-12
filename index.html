@@ -30,17 +30,18 @@
             <p class="font-size-text">アカウント情報</p>
             <span></span>
           </div>
+          <!-- 名前 -->
           <div class="info-box input-name">
             <div class="input-name-sec">
-              <label class="form-label" for="last-name">名字</label>
+              <label class="form-label input-required" for="last-name">名字</label>
               <input type="text" class="input-box-design input-box-size" id="last-name" required>
             </div>
             <div class="input-name-sec">
-              <label class="form-label" for="first-name">名前</label>
+              <label class="form-label input-required" for="first-name">名前</label>
               <input type="text" class="input-box-design input-box-size" id="first-name" required>
             </div>
           </div>
-
+          <!-- 性別 -->
           <div class="info-box select-gender">
             <label class="form-label" for="select-gender-sec">性別</label>
             <ul class="select-gender-sec" id="select-gender-sec">
@@ -58,7 +59,7 @@
               </li>
             </ul>
           </div>
-
+          <!-- 出身 -->
           <div class="select-prefecture">
             <label class="form-label" for="prefecture">出身</label>
             <select class="input-box-design input-box-size" name="prefecture" id="prefecture">
@@ -69,15 +70,17 @@
             </select>
             <span></span>
           </div>
+          <!-- Eメール -->
           <div class="info-box">
             <label class="form-label input-required" for="input-email-area">Eメール</label>
             <input class="input-box-design input-box-size" type="email" class="input-email-area" id="input-email-area" placeholder="ex) hoge@example.com" required>
           </div>
+          <!-- 電話番号 -->
           <div class="info-box input-tel-num">
             <label class="form-label" for="input-tel-num-area">電話番号</label>
             <input class="input-box-design input-box-size" type="tel" class="input-tel-num-area" id="input-tel-num-area" placeholder="ex) 09012345678">
           </div>
-
+          <!-- パスワード -->
           <div class="info-box">
             <label class="form-label input-required" for="input-password-area">パスワード</label>
             <input class="input-box-design input-box-size" type="password" class="input-password-area" id="input-password-area" required>
@@ -86,7 +89,7 @@
             <label class="form-label input-required" for="input-password-check-area">パスワード(確認用)</label>
             <input class="input-box-design input-box-size" type="password" class="input-password-check-area" id="input-password-check-area" required>
           </div>
-
+          <!-- 希望コース -->
           <div class="info-box select-course">
             <label class="form-label" for="select-course-area">希望コース</label>
             <ul class="select-course-area" id="select-course-area">
@@ -95,18 +98,18 @@
               <li><input type="checkbox" name="course" id="app" value="app"><label class="course-label" for="app">アプリ</label></li>
             </ul>
           </div>
-
+          <!-- 備考 -->
           <div class="info-box input-textarea">
             <label class="form-label" for="input-textarea-box">備考</label>
             <textarea class="input-box-design input-textarea-box" id="input-textarea-box" placeholder="何かあればご記入ください" cols="67" rows="4"></textarea>
           </div>
+          <!-- アカウント作成ボタン -->
           <button type="submit" class="submit-btn">アカウント作成</button>
           <p class="font-size-text info-box description">
             アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。
           </p>
         </form>
       </div>
-
       <div class="bottom-contents">
         <p class="font-size-text">すでにアカウントをお持ちですか？ <a href="#">ログイン</a></p>
         <p class="font-size-text"><a href="#">認証メールが届きませんか？</a></p>
