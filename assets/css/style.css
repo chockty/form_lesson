@@ -187,7 +187,7 @@ a {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #ddd;
   left: 0;
   top: 0;
@@ -200,7 +200,7 @@ a {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #1d7aca;
+  background-color: rgb(15, 204, 195);
   left: 4px;
   top: 4px;
   opacity: 0;
@@ -280,8 +280,8 @@ a {
   content: '';
   width: 8px;
   height: 15px;
-  border-right: 3px solid rgb(41, 216, 158);
-  border-bottom: 3px solid rgb(41, 216, 158);
+  border-right: 3px solid rgb(15, 204, 195);
+  border-bottom: 3px solid rgb(15, 204, 195);
   display: block;
   position: absolute;
   top: 50%;
@@ -307,7 +307,7 @@ a {
 
 /* submit */
 .submit-btn {
-  background-color: rgb(41, 216, 158);
+  background-color: rgb(15, 204, 195);
   outline: none;
   border: none;
   border-radius: 3px;
@@ -326,14 +326,14 @@ a {
 
 .submit-btn:active {
   background-color: #fff;
-  color: rgb(41, 216, 158);
+  color: rgb(15, 204, 195);
   border: 1px solid rgb(226, 225, 223);
 }
 
 /* bottom-contents */
 .description a,
 .bottom-contents p a {
-  color: rgb(41, 216, 158);
+  color: rgb(15, 204, 195);
   opacity: 1;
 }
 
